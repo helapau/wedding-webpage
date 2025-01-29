@@ -1,0 +1,247 @@
+:root {
+    --black: #09080a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gowun-dodum {
+    font-family: "Gowun Dodum", serif;    
+}
+
+.poiret-one {
+    font-family: "Poiret One", serif;    
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    font-family: "Poiret One", serif;
+}
+
+.text-padding {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.subsection-margin {
+    margin-top: 3rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.9rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+
+
+article {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    color: var(--black);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+    header a:link {
+        text-decoration: none;
+    }
+
+    header a:hover, a:active {
+        text-decoration: underline;
+        text-decoration-thickness: 0.5rem;
+/*        text-decoration-color: var(--green);*/
+    }
+
+
+.top-nav-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.top-nav {
+    box-shadow: 1px 1px 1.2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+    .top-nav input[type="checkbox"],
+    #top-nav-hamburger-label {
+        display: none;
+    }
+
+#top-nav-collapsible li a {
+/*    color: var(--black);*/
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+    .top-nav ul li {
+        padding: 1rem 0.5rem;
+    }
+
+@media screen and (max-width: 750px) {
+    /*if the checkbox is not marked, the menu is not displayed */
+    .top-nav input[type="checkbox"]:not(:checked) ~ .top-nav-menu #top-nav-collapsible {
+        display: none;
+    }
+
+    .top-nav input[type="checkbox"]:not(:checked) ~ #top-nav-hamburger-label > :last-child {
+        display: none;
+    }
+
+    .top-nav input[type="checkbox"]:checked ~ #top-nav-hamburger-label > :first-child {
+        display: none;
+    }
+
+
+
+    .top-nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .top-nav-menu {
+        flex-direction: column;
+    }
+
+
+
+
+    #top-nav-hamburger-label {
+        display: block;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .top-nav ul li {
+        padding: 0;
+    }
+
+    .top-nav .font-title li {
+        padding: 0;
+    }
+
+    #top-nav-collapsible {
+        flex-direction: column;
+    }
+
+        #top-nav-collapsible li {
+            padding-top: 0.3rem;
+        }
+}
+
+#figure-main-photo {
+    display: flex;
+    justify-content: center;    
+    height: 95vh;
+}
+
+@media screen and (max-width: 750px) {
+    #figure-main-photo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#main-photo {
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.our-names {
+    font-size: 3rem;
+}
+
+.two-pane {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-pane {
+    gap: 2rem;
+}
+
+.info-pane-names {
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .two-pane {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+.full-page-section {
+/*    height: 100vh;*/
+/*    box-sizing: border-box;   */
+}
+
+    .full-page-section:not(:first-child) {
+        padding-top: 5rem;
+    }
+
+
+td {
+    padding: 0 1rem 0.5rem 0;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+
+
+
+
+
