@@ -1,8 +1,14 @@
 ﻿/*styles specific to navigation */
+:root {
+    --blue: #3266ad;
+    --black: #09080a;
+    --white: #FAFAF5;
+}
+
 header {
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 1;
     color: var(--black);
     font-style: normal;
@@ -10,15 +16,20 @@ header {
     font-size: 1.1rem;
 }
 
+    header a {
+        color: var(--black);
+    }
+
     header a:link {
         text-decoration: none;
     }
 
-    header a:hover, a:active {
+    header a:hover, a:active, a:focus {
         text-decoration: underline;
-        text-decoration-thickness: 0.5rem;
-        /*        text-decoration-color: var(--green);*/
-    }
+        text-decoration-thickness: 0.2rem;
+        text-decoration-color: var(--blue);
+        color: var(--black);
+    }   
 
 
 .top-nav-menu {

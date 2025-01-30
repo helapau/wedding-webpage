@@ -1,25 +1,20 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Honza &amp; Hela</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honza a Hela</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="hero.css"/>
+    <link rel="stylesheet" href="nav.css"/>
 </head>
-<body class="font-text">
-    <header>
+<body>
+    <header class="gowun-dodum">
         <nav class="top-nav">
-            <ul class="font-title">
-                <li><a href="#hero">Honza &amp; Hela</a></li>
-            </ul>
-
             <input type="checkbox" id="top-nav-hamburger-check" />
             <label id="top-nav-hamburger-label" for="top-nav-hamburger-check" tabindex="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-label="Menu">
@@ -43,121 +38,134 @@
                 </ul>
                 <ul>
                     <li><a href="./eng.html">ENG</a></li>
-                </ul>                
+                </ul>
             </div>
-            
-        </nav>        
+        </nav>
     </header>
     <main>
-        
-        <section id="hero">
-            <article>
-                <p>
-                    Vítejte na průvodních stránkách našeho svatebního dne.<br />
-                    Doufáme, že zde najdete všechny důležité informace.
-                </p>
+
+
+        <section id="hero">            
+            <div class="two-pane">
                 <figure id="figure-main-photo">
-                    <div class="ribbon top-left"></div>
-                    <div class="ribbon top-right"></div>
-                    <div class="ribbon bottom-left"></div>
-                    <div class="ribbon bottom-right"></div>
                     <img src="assets/main-photo.jpg" alt="honza-hela-funny-photo" id="main-photo" />
-                </figure>               
-                    <p>
-                        Naše svatba se koná <span class="highlight">5. dubna 2025</span>. Obřad bude zahájen v 15 hodin. <br />
-                        Do sálu bude možné přicházet od 14:30 hodin.
-                    </p>
-                    <p>
-                        Sál se nachází v <span class="highlight">Lobkowiczkém paláci na Pražském hradě</span>, Jiřská 3, 119 00 Praha 1-Hradčany.<br/>
-                        Odkaz na mapu <a href="https://mapy.cz/s/mabokujako" target="obrad-mapa" rel="noopener noreferrer">zde.</a> Doporučujeme si zkontrolovat adresu, Lobkowiczké paláce jsou v Praze totiž dva!
-                    </p>                    
+                </figure>
+                <div class="center-column info-pane">
+                    <span class="gowun-dodum">Vítáme Vás na průvodních stránkách našeho svatebního dne.</span>
+                    <span class="center-column info-pane-names">
+                        <span class="our-names poiret-one">Helena Paulasová</span>
+                        <span class="our-names poiret-one">&amp;</span>
+                        <span class="our-names poiret-one">Jan Špaček</span>
+                    </span>
 
-                    
-            </article>            
+                </div>
+            </div>
+            
+
         </section>
-
         <section id="ceremony">
-            <h2 class="font-title">Obřad</h2>
-            <article>
-                <p>
-                    Několikrát jsme navštívili taneční akce, které se pořádaly v sále patřícím pražské obci <a href="https://www.unitaria.cz/" target="unitaria-odkaz" rel="noopener noreferrer">českých unitářů</a>. Tam jsme se o nich dozvěděli a tak nějak to na nás zanechalo dobrý dojem. Tak jsme se rozhodli požádat o vedení obřadu duchovního pana <a href="https://unitaria-praha.cz/sluzba-duchovnich/duchovni.html" target="duchovni-odkaz" rel="noopener noreferrer">Petra Samojského.</a>
-                </p>
-            </article>
+            <h2>Obřad</h2>
+            <p>
+                Naše svatba se koná <span class="highlight">5. dubna 2025</span>. Obřad bude zahájen v 15 hodin. <br />
+                Do sálu bude možné přicházet od 14:30 hodin.
+            </p>
+            <p>
+                Sál se nachází v <span class="highlight">Lobkowiczkém paláci na Pražském hradě</span>, Jiřská 3, 119 00 Praha 1-Hradčany.<br />
+                Odkaz na mapu <a href="https://mapy.cz/s/mabokujako" target="obrad-mapa" rel="noopener noreferrer">zde</a>. Doporučujeme si zkontrolovat adresu, Lobkowiczké paláce jsou v Praze totiž dva! <br />
+                Parkování není možné! Doporučujeme využít MHD.
+            </p>
+
+            <h3>Průběh</h3>
+            <p>
+                Rozhodli jsme se požádat o vedení obřadu duchovního pražské obce unitářů pana <a href="https://unitaria-praha.cz/sluzba-duchovnich/duchovni.html" target="duchovni-odkaz" rel="noopener noreferrer">Petra Samojského</a>. <br />
+                Unitáři jsou svobodomyslné náboženské společenství. Dozvěděli jsme se o nich na taneční akci, která se konala v jejich komunitním centru. Zaujali nás především otevřeností. Jsme vděční panu Samojskému, že nabízí možnost provedení takovým přechodovým rituálem, jakým svatba je jinak, než z klasického pohledu zákona a státu.
+            </p>
         </section>
         <section id="schedule">
-            <h2 class="font-title">Program</h2>
-            <article>
-                <table>
-                    <tr>
-                        <td>14:30</td>
-                        <td>Otevření obřadního sálu. Můžete přijít, vybrat si místo k sezení a seznámit se s těmi, které neznáte :)</td>
-                    </tr>
-                    <tr>
-                        <td>15:00</td>
-                        <td>Zahájení obřadu.</td>
-                    </tr>
-                    <tr>
-                        <td>15:30</td>
-                        <td>Ukončení obřadu.</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td><em>Společný přesun do Vozovny Střešovice. Půjdeme cca půl hodiny (1,5 km) pěšky, místy i přes kočičí hlavy.</em></td>
-                    </tr>
-                    <tr>
-                        <td>16:40</td>
-                        <td>Odjezd železným ořem na místo oslavy.</td>
-                    </tr>                   
-                    <tr><td>18:00</td> <td>Společný přípitek, promluvy.</td></tr>
-                    <tr><td>19:30 - 21:00</td><td>Taneční blok: mini lekce swingového tance (ať si také můžete zatančit). První tanec novomanželů.</td></tr>
-                    <tr><td>do 22:00</td> <td>Honzův drum'n'bass výběr, možná posezení u ohně, plkání... </td></tr>
-                </table>
+            <h2>Program</h2>
+            <table>
+                <tr>
+                    <td>14:30</td>
+                    <td>Otevření obřadního sálu.</td>
+                </tr>
+                <tr>
+                    <td><b>15:00</b></td>
+                    <td>Zahájení obřadu.</td>
+                </tr>
+                <tr>
+                    <td>15:30</td>
+                    <td>Ukončení obřadu.</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td><em>Společné focení, volný čas určený k přesunu na tramvajovou zastávku </em> <a target="odjezd-tram-trasa" rel="noreferrer noopener" href="https://mapy.cz/s/cacoleraje"> Pražský hrad</a>.
+                </tr>
+                <tr>
+                    <td><b>16:30</b></td>
+                    <td>Odjezd soukromou tramvají na místo oslavy.</td>
+                </tr>
+                <tr><td>18:00</td> <td>Společný přípitek, promluvy.</td></tr>
+                <tr><td>19:30 - 21:00</td><td>Taneční blok: mini lekce swingového tance (ať si také můžete zatančit). První tanec novomanželů.</td></tr>
+                <tr><td>do 22:00</td> <td>Honzův drum&apos;n&apos;bass výběr, možná posezení u ohně. Ukončení.</td></tr>
+            </table>
+            <h3>Přesun na oslavu</h3>
+            <p>
+                Po skončení obřadu je volná chvíle určená k přesunu na zastávku tramvaje Pražský hrad. <a target="odjezd-tram-trasa" rel="noreferrer noopener" href="https://mapy.cz/s/cacoleraje">Odkaz na trasu</a>.
+                <br />
+                <b>Z této zastávky v 16:30 odjede naše soukromá historická tramvaj.</b> Prosím, dorazte včas, odvoz na nás nemůže čekat.
+                <br />
+                Pokud byste to nestihli, můžete samozřejmě jet běžnou hromadnou dopravou.
+                <br />
+                Cílová zastávka je <em>U Průhonu</em>. Odsud je to asi 200 m do Město-Moře, kde na nás bude čekat večeře. Trasa od Dělnické k Město-Moře <a href="https://en.mapy.cz/s/kugohuzohe" rel="noopener noreferrer" target="delnicka-mapa">na mapě zde</a>.
+                <br />
+            </p>
+            <p>Jelikož se oslava koná ve vnitrobloku, kde lidé bydlí, je nutné dodržovat noční klid od 22 hodin!</p>
 
-                <p>Jelikož se oslava koná ve vnitrobloku, kde lidé bydlí, je nutné dodržovat noční klid od 22 hodin!</p>
-            </article>
         </section>
         <section id="accomodation">
-            <h2 class="font-title">Ubytování</h2>
-            <article>
-                <p>
-                    Pokud jsme Vám slíbili ubytování, tak to bude v hotelu....
-                </p>
-            </article>
+            <h2>Ubytování</h2>
+            <p>
+                Pokud jsme Vám slíbili ubytování, tak je zajištěné v hotelu <a href="https://www.hotelfactory.cz" target="hotel-odkaz" rel="noopener noreferrer">Colorfactory SPA</a>.<br />
+                Hotel se nachází 80 m od Město-Moře, kde bude probíhat oslava. Podívejte se na mapu <a href="https://mapy.cz/s/derotupuka" target="hotel-mapa-odkaz" rel="noopener noreferrer">zde</a>.<br />
+            </p>
+            <p>
+                Hotel je objednaný od pátku 4. do neděle 6. dubna, včetně snídaní a parkování.
+            </p>
+
         </section>
         <section id="gifts">
-            <h2 class="font-title">Dary</h2>
-            <article>
-                <p>
-                    Největším darem pro nás bude, když se dostavíte v dobré náladě a společně to s námi oslavíte :)
-                </p>
-                <p>
-                    Jiné dary proto nechceme, protože si myslíme, že v dnešní době nepřeberných možností je lepší, když si člověk vybere, co chce a potřebuje podle svého gusta.
-                </p>
-                <p>
-                    Děkujeme :)
-                </p>
-            </article>
+            <h2>Dary</h2>
+            <p>
+                Největším darem pro nás bude, když se dostavíte v dobré náladě a společně to s námi oslavíte :)
+            </p>
+            <p>
+                Věcné dary proto nechceme, protože si myslíme, že v dnešní době nepřeberných možností je lepší, když si člověk vybere, co chce a potřebuje podle svého gusta.
+            </p>
+            <p>
+                Děkujeme :)
+            </p>
+
         </section>
         <section id="dress-code">
-            <h2 class="font-title">Dress code</h2>
-            <article>
-                <p>
-                    Jak obřad, tak oslava budou probíhat uvnitř. Obřad bude v prostředí spíše formálním a „nóbl“, nicméně po skončení obřadu se půjde cca 30 minut pěšky, místy i přes kočičí hlavy. Vzhledem k aprílovému počasí je taky dobré zvážit použití deštníku a vhodného svrchního oděvu. Oslava pak bude zase v prostředí spíše neformálním.
-                </p>
-                <p>
-                    Oblékněte se tedy dle svého uvážení a vkusu :)
-                </p>
-            </article>
+            <h2>Co si obléct</h2>
+            <p>
+                Jak obřad, tak oslava budou probíhat uvnitř. Obřad bude v prostředí spíše formálním a „nóbl“, nicméně po skončení obřadu se půjde cca 15 minut pěšky (1 km), místy i přes kočičí hlavy. <br />
+                Vzhledem k aprílovému počasí je taky dobré zvážit použití deštníku a vhodného svrchního oděvu. Oslava pak bude zase v prostředí spíše neformálním. Na místo oslavy je nutné přejít přes dvorek tvořený jemným štěrkem.
+                <br />
+                Hlavní bod programu tvoří swingový taneční blok. Na tančení swingu jsou obecně vhodné pohodlné boty, raději s nižším podpatkem.
+            </p>
+            <p>
+                Oblékněte se tedy dle svého uvážení a vkusu :)
+            </p>
+
         </section>
         <section id="questions">
             <h2 class="font-title">Dotazy</h2>
-            <article>
-                <p>
-                    Pokud máte nějaký dotaz, neváhejte kontaktovat Honzu na <span class="email">patek.mail@gmail.com</span> nebo Helu na <span class="email">helenapaulasova@hotmail.com</span>.
-                    Především by nás zajímalo pokud máte nějaké speciální požadavky na jídlo či pití (oblíbený drink nebo bezlepkové pečivo?). Jídlo bude veganské/vegetariánské.
-                </p>
-            </article>
+            <p>
+                Pokud máte nějaký dotaz, neváhejte kontaktovat Honzu na <span class="email">patek.mail@gmail.com</span> nebo Helu na <span class="email">helenapaulasova@hotmail.com</span>.
+                Především by nás zajímalo pokud máte nějaké speciální požadavky na jídlo či pití (oblíbený drink nebo bezlepkové pečivo?). Jídlo bude veganské/vegetariánské.
+            </p>
         </section>
-    </main>     
+    </main>
 </body>
 </html>

@@ -1,25 +1,20 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Honza &amp; Hela</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honza a Hela</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="nav.css" />
 </head>
-<body class="font-text">
-    <header>
+<body>
+    <header class="gowun-dodum">
         <nav class="top-nav">
-            <ul class="font-title">
-                <li><a href="#hero">Honza &amp; Hela</a></li>
-            </ul>
-
             <input type="checkbox" id="top-nav-hamburger-check" />
             <label id="top-nav-hamburger-label" for="top-nav-hamburger-check" tabindex="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-label="Menu">
@@ -36,7 +31,7 @@
                 <ul id="top-nav-collapsible">
                     <li><a href="#ceremony">Ceremony</a></li>
                     <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#accomodation">Accomodation</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
                     <li><a href="#gifts">Gifts</a></li>
                     <li><a href="#dress-code">Dress code</a></li>
                     <li><a href="#questions">Questions</a></li>
@@ -45,124 +40,135 @@
                     <li><a href="./index.html">CS</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
     <main>
 
+
         <section id="hero">
-            <article>
-                <p>
-                    Welcome to the companion web page to our wedding day.<br />
-                    We hope that here you will find all important information.                    
-                </p>
+            <div class="two-pane">
                 <figure id="figure-main-photo">
-                    <div class="ribbon top-left"></div>
-                    <div class="ribbon top-right"></div>
-                    <div class="ribbon bottom-left"></div>
-                    <div class="ribbon bottom-right"></div>
                     <img src="assets/main-photo.jpg" alt="honza-hela-funny-photo" id="main-photo" />
                 </figure>
-                <p>
-                    Our wedding takes place on <span class="highlight">Saturday, 5 April 2025</span>. The ceremony will commence at 3 PM.
-                    <br />
-                    You can start arriving from 2:30 PM.                    
-                </p>
-                <p>
-                    The wedding hall is located in the <span class="highlight">Lobkowicz Palace at Prague Castle,</span> 
-                    Jiřská 3, 119 00 Praha 1-Hradčany.<br />
-                    Link to the map location <a href="https://en.mapy.cz/s/macudaguhe" target="obrad-mapa" rel="noopener noreferrer">here.</a> We recommend to check the map because there are two Lobkowicz palaces in Prague!                    
-                </p>
+                <div class="center-column info-pane">
+                    <span class="gowun-dodum">Welcome to the companion web page to our wedding day.</span>
+                    <span class="center-column info-pane-names">
+                        <span class="our-names poiret-one">Helena Paulasová</span>
+                        <span class="our-names poiret-one">&amp;</span>
+                        <span class="our-names poiret-one">Jan Špaček</span>
+                    </span>
+
+                </div>
+            </div>
 
 
-            </article>
         </section>
-
         <section id="ceremony">
-            <h2 class="font-title">Ceremony</h2>
-            <article>
-                <p>
-                    We attended a few dance parties that were held in a space belonging to the <a href="https://www.unitaria.cz/" target="unitaria-odkaz" rel="noopener noreferrer">
-                        Unitarian Church of Prague.
-                    </a> We found out about them there and since our impression was good, we decided to ask their spiritual guide <a href="https://unitaria-praha.cz/sluzba-duchovnich/duchovni.html" target="duchovni-odkaz" rel="noopener noreferrer">
-                        Mr. Petr Samojský
-                    </a> to guide us through our wedding ceremony.
-                </p>
-            </article>
+            <h2>Ceremony</h2>
+            <p>
+                Our wedding takes place on <span class="highlight">Saturday, 5 April 2025</span>. The ceremony will commence at 3 PM.
+                <br />
+                You can start arriving from 2:30 PM.
+            </p>
+            <p>
+                The wedding hall is located in the <span class="highlight">Lobkowicz Palace at Prague Castle,</span>
+                Jiřská 3, 119 00 Praha 1-Hradčany.<br />
+                Link to the map location <a href="https://en.mapy.cz/s/macudaguhe" target="obrad-mapa" rel="noopener noreferrer">here</a>. We recommend to check the map because there are two Lobkowicz palaces in Prague!<br/>
+                Parking near the palace is not possible, we reccomend to use public transport.
+            </p>
+            
+            <p>
+                We decided to ask the spiritual guide of the Prague Unitarian community, Mr. <a href="https://unitaria-praha.cz/sluzba-duchovnich/duchovni.html" target="duchovni-odkaz" rel="noopener noreferrer">Petr Samojský</a>, to conduct the ceremony. <br />
+                The Unitarians are a free-thinking religious community. We learned about them at a dance event held in their community center. They impressed us primarily with their openness. 
+                We are grateful to Mr. Samojský for offering the possibility of performing such a rite of passage, as a wedding is, in a different way compared to the classical view of law and state.                
+            </p>
         </section>
         <section id="schedule">
-            <h2 class="font-title">Schedule</h2>
-            <article>
-                <table>
-                    <tr>
-                        <td>14:30</td>
-                        <td>Opening of the wedding hall. You can come, choose a spot to sit and get to know other guests :)</td>                        
-                    </tr>
-                    <tr>
-                        <td>15:00</td>
-                        <td>Commencement of the ceremony.</td>
-                    </tr>
-                    <tr>
-                        <td>15:30</td>
-                        <td>Closing of the ceremony.</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td><em>Joint transfer to Vozovna Střešovice. We will be walking for anout 30 minutes (1.5 km), across old cobbles paving in some places. Consider wearing suitable shoes.</em></td>                       
-                    </tr>
-                    <tr>
-                        <td>16:40</td>
-                        <td>Ride on the iron horse to the place of the party.</td>                        
-                    </tr>
-                    <tr><td>18:00</td> <td>Celebratory drink, speeches.</td></tr>
-                    <tr><td>19:30 - 21:00</td><td>Dance section: swing dance 101 (so you can dance as well). First dance of the newlyweds.</td></tr>
-                    <tr><td>till 22:00</td> <td>Honza&apos;s drum'n'bass playlist, maybe outdoor fireplace, chit-chat...</td></tr>
-                </table>
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <td>14:30</td>
+                    <td>Opening of the wedding hall.</td>
+                </tr>
+                <tr>
+                    <td><b>15:00</b></td>
+                    <td>Commencement of the ceremony.</td>
+                </tr>
+                <tr>
+                    <td>15:30</td>
+                    <td>Closing of the ceremony.</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td><em>Taking commemorative photos together. Free time to move to the tram stop </em> Pražský hrad.</td>
+                </tr>
+                <tr>
+                    <td><b>16:30</b></td>
+                    <td>Departure by private tram to the celebration venue.</td>
+                </tr>
+                <tr><td>18:00</td> <td>Celebratory drink, speeches.</td></tr>
+                <tr><td>19:30 - 21:00</td><td>Dance section: swing dance 101 (so you can dance as well). First dance of the newlyweds.</td></tr>
+                <tr><td>do 22:00</td> <td>Honza&apos;s drum&apos;n&apos;bass playlist, maybe outdoor fireplace. Ending.</td></tr>
+            </table>
+            <h3>Transfer to the party</h3>
+            <p>
+                After the ceremony ends, there will be free time for transfer to the tram stop Pražský hrad. <a target="odjezd-tram-trasa" rel="noreferrer noopener" href="https://mapy.cz/s/cacoleraje">Link to the route</a>.
+                <br />
+                <b>At 4:30 PM, our private historic tram will depart from this stop.</b> Please arrive on time, the tram cannot wait for us.                
+                <br />
+                If you can&apos;t make it on time, you can take regular public transport.                
+                <br />
+                The final stop is <em>U Průhonu</em>. From here, it is about 200 m to Město-Moře, where dinner will be waiting for us. The route from Dělnická to Město-Moře is <a href="https://en.mapy.cz/s/kugohuzohe" rel="noopener noreferrer" target="delnicka-mapa">here</a>.
+                <br />
+            </p>
+            <p>
+                Since the party takes place in a residential area, we must keep quiet after 10 PM!
+            </p>
 
-                <p>Since the party is held at a residential area, we must keep quiet after 10 PM!</p>
-            </article>
         </section>
-        <section id="accomodation">
-            <h2 class="font-title">Accomodation</h2>
-            <article>
-                <p>
-                    If we have promised to provide shelter during the whole weekend, it will be at a hotel...
-                </p>
-            </article>
+        <section id="accommodation">
+            <h2>Accommodation</h2>
+            <p>
+                If we have promised you accommodations, it is arranged in the hotel <a href="https://www.hotelfactory.cz" target="hotel-odkaz" rel="noopener noreferrer">Colorfactory SPA</a>.<br />
+                The hotel is located 80 m from Město-Moře, where the party will be held. Take a look at <a href="https://mapy.cz/s/derotupuka" target="hotel-mapa-odkaz" rel="noopener noreferrer">the map here</a>.<br />
+            </p>
+            <p>
+                The hotel is booked from Friday, 4 April to Sunday, 6 April, including breakfast and parking.
+            </p>
+
         </section>
         <section id="gifts">
-            <h2 class="font-title">Gifts</h2>
-            <article>
-                <p>
-                    The greatest gift will be if you come in good mood and celebrate with us :)                    
-                </p>
-                <p>
-                    We don&apos;t want any other gifts because in today&apos;s world of infinite possibilities, it is better if one chooses what they want and need according to their tastes.                    
-                </p>
-                <p>
-                    Thank you :)
-                </p>
-            </article>
+            <h2>Gifts</h2>
+            <p>
+                The greatest gift will be if you come in good mood and celebrate with us :)
+            </p>
+            <p>
+                We don&apos;t want any material gifts because in today&apos;s world of infinite possibilities, it is better if one chooses what they want and need according to their tastes.
+            </p>
+            <p>
+                Thank you :)
+            </p>
+
         </section>
         <section id="dress-code">
-            <h2 class="font-title">Dress code</h2>
-            <article>
-                <p>
-                    Ceremony as well as the party will be held inside. The ceremony is held in a rather formal, “posh” setting. However after it ends, we will be walking for about 30 minutes, sometimes over cobbles paving. In regards to the April weather, it might be suitable to consider bringing an umbrella and outer clothing. The party is held at a rather informal setting.
-                </p>
-                <p>
-                    Please dress according to your judgement and personal style :)                    
-                </p>
-            </article>
+            <h2>What to wear</h2>
+            <p>
+                Both ceremony and party will be held indoors. The ceremony is held in a rather formal, “posh” setting. However the transfer to the tram stop is about 15 minutes walk (1 km), sometimes over cobbles paving. <br />
+                In regards to the April weather, it might be suitable to consider bringing an umbrella and outer clothing. The party is held at a rather informal setting. At the party venue, it is necessary to cross a courtyard with fine gravel.                 
+                <br />
+                The main part of the program is a swing dance block. Comfortable shoes are generally suitable for swing dancing, preferably with a lower heel.                
+            </p>
+            <p>
+                Please dress according to your judgement and personal style :)
+            </p>
+
         </section>
         <section id="questions">
             <h2 class="font-title">Questions</h2>
-            <article>
-                <p>
-                    If you have a question, don&apos;t hesitate to contact Honza <span class="email">patek.mail@gmail.com</span> or Hela <span class="email">helenapaulasova@hotmail.com</span>.
-                    Firstly we are concerned whether you have any special needs regarding food or beverages (any favorite drink or perhaps gluten-free pastry?). The food at the party will be vegan/vegetarian.
-                </p>
-            </article>
+            <p>
+                If you have a question, don&apos;t hesitate to contact Honza <span class="email">patek.mail@gmail.com</span> or Hela <span class="email">helenapaulasova@hotmail.com</span>.
+                Firstly we are concerned whether you have any special needs regarding food or beverages (any favorite drink or perhaps gluten-free pastry?). The food at the party will be vegan/vegetarian.
+            </p>
         </section>
     </main>
 </body>

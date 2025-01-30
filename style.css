@@ -1,336 +1,97 @@
-:root {
-    --pearl-bush: #f6f3ee;
-    --white: #FBFBFB;
-    --black: #262f2e;
-    --black-light: #544F53;
-    --blue-light: #5da9cd;
-    --blue-dark: #3594BC;
-    --green: #c6d728;
+﻿:root {
+    --black: #09080a;
+    --blue: #3266ad;
+    --white: #FAFAF5;
+    --red: #db4f2b;
 }
-
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.font-title {
-    font-family: "Dekko", serif;
-    font-weight: 400;
-    font-style: normal;    
-}
-
-.font-text {
-    font-family: "Outfit", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;    
-}
-
-body {    
-    display: flex;
-    flex-direction: column;
-}
-
-svg {
-    color: var(--black);
-}
-
-.fa-icon {
-    width: 1.8rem;
-    height: 1.8rem;
-    vertical-align: -0.125rem;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: var(--pearl-bush);
-    z-index: 1;
-}
-
-    header a:link {
-        text-decoration: none;
-    }
-
-    header a:hover, a:active {
-        text-decoration: underline;
-        text-decoration-thickness: 0.5rem;
-        text-decoration-color: var(--green);
-    }
-
-
-.top-nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.top-nav {
-    
-    box-shadow: 1px 1px 1.2px rgba(0, 0, 0, 0.1);  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-    .top-nav input[type="checkbox"],
-    #top-nav-hamburger-label {
-        display: none;
-    }
-
-    #top-nav-collapsible li a {
-        color: var(--black);
-    }
-
-    .top-nav ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-    }
-
-        .top-nav ul li  {
-            padding: 1rem 0.5rem;
-        }
-
-    .top-nav .font-title li a {
-        font-size: 1.8rem; 
-        color: var(--blue-dark);
-        
-    }
-
-@media screen and (max-width: 750px) {
-    /*if the checkbox is not marked, the menu is not displayed */
-    .top-nav input[type="checkbox"]:not(:checked) ~ .top-nav-menu #top-nav-collapsible {
-        display: none;
-    }
-
-    .top-nav input[type="checkbox"]:not(:checked) ~ #top-nav-hamburger-label > :last-child {
-        display: none;
-    }
-
-    .top-nav input[type="checkbox"]:checked ~ #top-nav-hamburger-label > :first-child {
-        display: none;
-    }
-
-    
-
-    .top-nav {
-        flex-direction: column;
-        padding: 1rem 0;
-    }
-
-    .top-nav-menu {
-        flex-direction: column;        
-    }
-
-    
-
-
-    #top-nav-hamburger-label {
-        display: block;
-        padding: 0;
-        cursor: pointer;
-    }
-
-        .top-nav ul li {
-            padding: 0;
-        }
-
-        .top-nav .font-title li {
-            padding: 0;
-        }
-
-    #top-nav-collapsible {
-        flex-direction: column;
-    }
-
-        #top-nav-collapsible li {
-            padding-top: 0.3rem;
-        }
-
-}
-
-main {
-    flex: auto;
-    padding: 0.5rem;
+body {
+    font-family: "Gowun Dodum", serif;
     background-color: var(--white);
-    margin-bottom: 2rem;
 }
 
-    main a:link, a:visited {
-        text-decoration: underline;
-        text-decoration-thickness: 0.2rem;
-        text-decoration-color: var(--green);
-        color: var(--black);
+    body a {
+        color: var(--blue);
     }
 
-    main a:hover, a:active {
-        text-decoration: dotted;
-    }
+        body a:active, a:focus, a:hover {
+            color: var(--red);
+        }
 
-    
-
-
-p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-#figure-main-photo {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 5rem auto;
-    position: relative;     
-}
-
-@media screen and (max-width: 600px) {
-    #figure-main-photo {
-        width: 100%;
-    }
-}
-
-#main-photo {
-    height: auto;
-    display: block;
-    width: 100%;     
-}
-
-.ribbon {
-    width: 25%; 
-    height: 5%;
-    background-color: var(--green);
-    position: absolute; 
-    transform-origin: center;
-}
-
-    
-    .ribbon.top-left {
-        top: 5%; 
-        left: -7%;
-        transform: rotate(-45deg); 
-    }
-
-    .ribbon.top-right {
-        top: 5%;
-        right: -7%;
-        transform: rotate(45deg);
-    }
-
-    .ribbon.bottom-left {
-        bottom: 5%;
-        left: -7%;
-        transform: rotate(45deg);
-    }
-
-    .ribbon.bottom-right {
-        bottom: 5%;
-        right: -7%;
-        transform: rotate(-45deg);
-    }
 
 section {
-    padding-top: 5rem;
-    margin: 0 0 5rem 0;
-}
-
-#hero {
-    padding-top: 4rem;
-}
-
-@media (max-width: 750px) {
-    section {
-        padding-top: 8rem;
-    }
-
-    
-}
-
-main section:last-child {
-    margin: 0 0 0 0;
-}
-
-article {
-    width: 50%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0.5rem;
     margin: 0 auto;
-    text-align: center;    
 }
 
-@media screen and (max-width: 750px) {
-    article {
-        width: 90%;
+    section:not(:nth-child(1)) {
+        padding-top: 5rem;
     }
 
+@media screen and (min-width: 1062px) {
+    section:not(:nth-child(1)) {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+h1, h2, h3, .our-names {
+    font-family: "Poiret One", serif;
+}
+
+.our-names {
+    color: var(--blue);
 }
 
 h2 {
-    color: var(--black-light);
-    border-bottom: 0.2rem solid var(--blue-dark);
-    font-size: 3rem;
-    text-align: center;
-}
-
-.highlight {        
-    font-size: 1.05rem;
+    font-size: 2.9rem;
     font-weight: 500;
+    font-style: normal;
 }
 
-#schedule ul {
-    list-style-type: none;
+h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+
+h2, h3, p {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p, table {
+    font-size: 1.2rem;
+}
+
+td {
+    padding: 0 1rem 0.5rem 0;
+}
+
+    td:nth-child(2) {
+        text-align: left;
+    }
+
+
+
+.center-column {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    align-items: center;
 }
 
-    #schedule ul li {
-        display: flex;
-        column-gap: 2rem;   
-        flex-basis: 2rem;
-    }
-
-
-#schedule table {
-    width: 100%;
-}
-
-    #schedule table th, td {
-        padding: 0.5rem;
-        text-align: left;        
-    }
-
-    #schedule table tr td:nth-child(1) {
-        white-space: nowrap;
-    }
-
-
-
-.email {
-    font-weight: 600;
+.email {    
     background-color: #fff;
     padding: 0 0.2rem;
 }
 
-footer {
-    background-color: var(--pearl-bush);
-    height: 3rem;
-}
 
-
-    
-
-    
-
-    
-
-
-
-
-
-    
 
