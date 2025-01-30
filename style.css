@@ -5,6 +5,10 @@
     --red: #db4f2b;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -93,5 +97,16 @@ td {
     padding: 0 0.2rem;
 }
 
+.scroll-top {
+    position: sticky;
+    bottom: 1rem;
+    right: 1rem;
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+    padding: 0.5rem;    
+    margin-top: calc(100vh + 50rem);
+    color: var(--black);
+}
 
 
